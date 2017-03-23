@@ -1,0 +1,45 @@
+{
+  "name": "service-aiml",
+  "version": "1.0.0",
+  "description": "service-aiml",
+  "main": "index.js",
+  "dependencies": {
+    "aimlinterpreter": "^0.1.7",
+    "boom": "^2.8.0",
+    "bunyan": "^1.8.1",
+    "cfenv": "^1.0.3",
+    "good": "^6.2.0",
+    "good-console": "^6.1.2",
+    "good-file": "^5.0.1",
+    "hapi": "^15.1.1",
+    "hapi-swagger": "^7.2.0",
+    "inert": "^4.0.2",
+    "joi": "^9.1.0",
+    "lodash": "^3.10.0",
+    "lout": "^6.2.3",
+    "request": "^2.75.0",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "lab": "^11.2.0"
+  },
+  "scripts": {
+    "test": "lab test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turingbots/service-aiml.git"
+  },
+  "author": "Turing Bots ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turingbots/issues"
+  },
+  "engines": {
+    "node": "4.6.x",
+    "npm": "2.15.x"
+  },
+  "homepage": "https://github.com/turingbots/"
+}

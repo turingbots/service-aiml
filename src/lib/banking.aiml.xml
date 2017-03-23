@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+   <!-- Account/Accounts/My Accounts-->
+   <category>
+      <pattern>ACCOUNT*</pattern>
+      <template>A</template>
+   </category>
+   <category>
+      <pattern>MY ACCOUNTS*</pattern>
+      <template>A</template>
+   </category>
+   <category>
+      <pattern>I ACCOUNT*</pattern>
+      <template>A</template>
+   </category>
+   <category>
+      <pattern>SHOW ME MY ACCOUNT BALANCE*</pattern>
+      <template>A</template>
+   </category>
+
+ <!-- Account Details/Accounts Details/ My Account Details-->  
+   <category>
+      <pattern>ACCOUNT DETAILS</pattern>
+      <template>B</template>
+   </category>
+   <category>
+      <pattern>ACCOUNTS DETAILS</pattern>
+      <template>B</template>
+   </category>
+   <category>
+      <pattern>MY ACCOUNT DETAILS*</pattern>
+      <template>B</template>
+   </category>
+   <category>
+      <pattern>SHOW ME MY ACCOUNT DETAILS*</pattern>
+      <template>B</template>
+   </category>
+   
+   <!--@@@ means line break-->
+   <category>
+      <pattern>ERROR MESSAGE</pattern>
+      <template>Sorry, I did not understand your question. You can type things like:@@@- Accounts @@@- Account Balance @@@- Account Details </template>
+   </category>
+   <category>
+      <pattern>HELP</pattern>
+      <template>You can type things like:@@@- Accounts @@@- Account Balance @@@- Account Details</template>
+   </category>
+   <category>
+      <pattern>*</pattern>
+      <template>X</template>
+   </category>
+
+</aiml>
