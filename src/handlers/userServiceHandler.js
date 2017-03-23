@@ -6,7 +6,7 @@ const log = require('../config/logger'),
 
 const userServiceHandler = {
 
-  getUserAccounts: function (userId, cb) {
+  getAccounts: function (userId, cb) {
         request({
             url: settings.userService + '/' + userId + "/accounts",
             method: 'GET'
@@ -50,8 +50,7 @@ const userServiceHandler = {
                 cb(response, null);
             };
         });
-    },
-
+    }
     
 }
 module.exports = userServiceHandler;

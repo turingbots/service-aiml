@@ -9,7 +9,7 @@ const log = require('../config/logger'),
 const punctRE = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\.\/:;<=>?\[\]^_`{|}~]/g;
 const spaceRE = /\s+/g;
 
-const genericAnswer = function (reply, msg) {
+const messageType5 = function (reply, msg) {
     const parsedMessage = new ParsedMessage({});
     parsedMessage.messageType = "generic_answer";
     parsedMessage.messageCode = 5;
@@ -21,7 +21,7 @@ const commonErrorHelp = function (reply) {
     aiml.findAnswerInLoadedAIMLFiles("ERROR MESSAGE", function (answer) {
         const re = new RegExp('@@@', 'gi');
         answer = answer.replace(re, "\r\n");
-        genericAnswer(reply, answer);
+        messageType5(reply, answer);
     });
 }
 
@@ -123,9 +123,10 @@ module.exports = {
                         break;
                     default:
                         if (answer != null && answer !== "") {
-                            genericAnswer(reply, answer);
+                            messageType5(reply, answer);
                         } else {
                             commonErrorHelp(reply);
+
                         }
                         break;
                 }
