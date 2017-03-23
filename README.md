@@ -4,12 +4,12 @@ utilizing [AIML](https://en.wikipedia.org/wiki/AIML) and calling various other m
 
 ##Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 See deployment for notes on how to deploy the project on a live system.
 
 ###Prerequisites
 * Install [Node.js] (https://nodejs.org/en/download/) - Runtime for your application.
-* [Clone] (https://git-scm.com/docs/git-clone) code to your local pc or development location : `git clone <.git path>` 
+* [Clone] (https://git-scm.com/docs/git-clone) code to your local pc or development location : `git clone <.git path>`
 
 ###Installing
 
@@ -19,9 +19,9 @@ See deployment for notes on how to deploy the project on a live system.
 From your application root folder`npm start`
 
 ###Swagger Rest api
-Application URL/documentation - Look on `src\config\settings.js` file for local port number cloud url/port settings. 
+Application URL/documentation - Look on `src\config\settings.js` file for local port number cloud url/port settings.
 
 `http://localhost:3002/documentation`
 
-## Deployment - PCF 
-[cf push](https://docs.cloudfoundry.org/devguide/deploy-apps/deploy-app.html) -f manifest.yml   git 
+## Deployment - PCF
+[cf push](https://docs.cloudfoundry.org/devguide/deploy-apps/deploy-app.html) -f manifest.yml   git
